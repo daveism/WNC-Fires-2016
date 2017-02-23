@@ -4,7 +4,7 @@ define([], function() {
     //and url parameters.
     var defaults = {
         "appid": "",
-        "webmap": "55f15224d4da4b4e98504a4ff3a69119", 
+        "webmap": "bebb6d403a6a45b590e11d5e00776f1c", 
         "oauthappid": null, //"AFTKRmv16wj14N3z",
         //Group templates must support a group url parameter. This will contain the id of the group. 
         //group: "",
@@ -12,7 +12,7 @@ define([], function() {
         //http://developers.arcgis.com/en/javascript/jshelp/ags_proxy.html
         "proxyurl": "",
         //UI specific parameters
-        "title": "Summary Viewer",
+        "title": "WNC Fires 2016",
         "logo": "",
         "color": "#80ab00",
         //Counter specific parameters
@@ -21,11 +21,11 @@ define([], function() {
             "fields":[
                 {
                     "id": "filterField",
-                    "fields": [""]
+                    "fields": ["incidentna"]
                 },
                 {
                     "id": "sumFields",
-                    "fields": []
+                    "fields": ["acres"]
                 },
                 {
                     "id": "avgFields",
@@ -41,7 +41,7 @@ define([], function() {
                 }
             ]
         },
-        "cluster": true,
+        "cluster": false,
         "hideCount": false,
         "hideSummaryType": false,
         "bingmapskey": "", //Enter the url to your organizations bing maps key if you want to use bing basemaps
